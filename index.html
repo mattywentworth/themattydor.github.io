@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Need to find Century Gothic font for the Heading elements-->
+    <title>Email & LP Creation</title>
+</head>
+<body>
+    <header>
+        <!-- Figure out how to make the announcement bar (the p element) scroll away and then have the logo and nav links stay fixed at the top of the page. Is it just sticky instead of fixed??? -->
+        <div class="announcement-bar">
+            <p>Create better content more efficiently in Stensul with <a href="https://stensul.com/resource/stensul-adds-generative-ai-capabilities-to-increase-email-creation-efficiency/">new integrated AI-enabled capabilities</a>. Intrigued? <a href="https://stensul.com/landing-pages/request-a-demo-ai/">See it in action</a>.</p>
+        </div>
+        <div class="header-bar">
+            <a href="https://stensul.com/"><img src="https://stensul.com/wp-content/uploads/2021/06/stensul-logo.svg" alt="Red and black logo for Stensul, an email and landing page creation platform."></a>
+            <nav>
+                <ul class="nav-bar">
+                    <a class="nav-link" href="https://stensul.com/how-stensul-works/"><li>How Stensul Works</li></a>
+                    <a class="nav-link" href="#"><li>Platform</li></a> <!-- Figure out how to get the down arrow next to the nav link/labels. -->
+                    <a class="nav-link" href="#"><li>Solutions</li></a>
+                    <a class="nav-link" href="#"><li>Resources</li></a>
+                    <a class="nav-link" href="#"><li>About</li></a>
+                    <a class="header-demo-request" href="https://stensul.com/request-a-demo-v2/"><li id="header-demo-request-button">See Stensul in action</li></a>
+                </ul>
+            <!-- Should I remove the button from the ul element and have as separate flex item? <button>See Stensul in action</button> -->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div>
+                <div id="tabs"> <!-- Need to figure out how to select the different tabs, expose the content within each one, and change the color of the tab when selected. -->
+                    <p id="tab1">Collaborative email and Landing Page creation</p>
+                    <p id="tab2">Real-time collaboration</p>
+                    <p id="tab3">eBook: 10 keys to landing pages that generate terrific conversion rates</p>
+                </div>
+                <div id="hero">
+                    <div id="hero-left">
+                        <h1>The collaborative email and landing page creation platform</h1>
+                        <br>
+                        <p>Empowering cross-functional teams to create high-quality, high-performing emails and landing pages in hours, not weeks.</p>
+                        <br>
+                        <p id="performance">9x faster. 2x performance. 100% agile.</p>
+                        <br>
+                        <div id="hero-demo-review">
+                            <a href="https://stensul.com/how-stensul-works/">Learn more about Stensul</a>
+                            <img id="g2reviews" src="https://stensul.com/wp-content/uploads/2021/07/G2-rating_v2.svg" alt="An icon representing Stensul's 4.9 out of 5 stars rating on G2 Crowd, a website that allows actual users to review enterprise software." title="Stensul has a 4.9 out of 5 stars rating on G2 Crowd.">
+                        </div>
+                    </div>
+                    <div id="hero-right">
+                        <h3>Are you STILL creating emails<br>and landing pages this way?</h3>
+                        <img id="chaos" src="https://stensul.com/wp-content/uploads/2022/11/chaos-graphic-111722v2-1024x893.png" alt="An image with the heading 'Are you still creating emails this way?' The image shows the different people, teams, software, and communication channels involved in creating emails. Arrows connecting the different people, software, and communication channels demonstrates the chaos of the old way of creating emails." title="The chaos and difficulty of creating emails and landing pages.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="logo-carousel">
+            <img src="https://stensul.com/wp-content/uploads/2021/09/eaton-vance-logo-300x57.png">
+            <img src="https://stensul.com/wp-content/uploads/2022/08/Equifax_red_rgb-300x56.png">
+            <img src="https://stensul.com/wp-content/uploads/2022/02/mural-logo-color-1024x199-1-300x58.png">
+            <img src="https://stensul.com/wp-content/uploads/2022/08/Equifax_red_rgb-300x56.png">
+            <img src="https://stensul.com/wp-content/uploads/2022/10/demandbase-logo-vector-2022-300x167.png">
+            <img src="https://stensul.com/wp-content/uploads/2022/01/610c8550409cef4e50e34796-yahoo-logo-p-2000-300x83.png">
+            <img src="https://stensul.com/wp-content/uploads/2021/07/clover-health-logo-300x33.jpg">
+            <img src="https://stensul.com/wp-content/uploads/2021/07/greenhouse-logo-300x68.png">
+            <img src="https://stensul.com/wp-content/uploads/2021/07/asics-logo.svg">
+            <img src="https://stensul.com/wp-content/uploads/2022/12/Siemens-logo-300x169.png">
+        </div>
+        <div id="integrations">
+            <h4>Integrations >></h4> <!-- Replace right arrows with arrows and animation from the Stensul site. -->
+            <h3>Integrations at the beginning, middle, and end</h3>
+            <p class="integrations-p">Go beyond one-click integrations to ESPs/MAPs to connect your entire email and landing page ecosystem.</p>
+            <p class="integrations-p" id="integrations-p-bold">Work smarter.</p>
+            <div id="integrations-carousel">
+                <div class="company" id="brandfolder">
+                    <div class="company-logo">
+                        <img src="https://stensul.com/wp-content/uploads/2021/06/int-brandfolder.png">
+                    </div>
+                    <p>Enable controlled access to the appropriate Brandfolder library DAM based on your brand or mailstream.</p>
+                    <img src="https://stensul.com/wp-content/uploads/2021/06/home-int-arrow-icon.svg">
+                </div>
+                <div class="company" id="eloqua">
+                    <div class="company-logo">
+                        <img src="https://stensul.com/wp-content/uploads/2021/07/5ebb189148a62353a7f5bd48_eloqua-logo.png">
+                    </div>
+                    <p>Easily and securely push HTML to Eloqua folders and groups with integrated headers and footers.</p>
+                    <img src="https://stensul.com/wp-content/uploads/2021/06/home-int-arrow-icon.svg">
+                </div>
+                <div class="company" id="marketo">
+                    <div class="company-logo">
+                        <img src="https://stensul.com/wp-content/uploads/2021/06/int-marketo.png">
+                    </div>
+                    <p>Easily push HTML emails to Marketo Marketing Activities or Design Studio directly from Stensul via API.</p>
+                    <img src="https://stensul.com/wp-content/uploads/2021/06/home-int-arrow-icon.svg">
+                </div>
+                <div class="company" id="movable-ink">
+                    <div class="company-logo">
+                        <img src="https://stensul.com/wp-content/uploads/2021/06/Movable-Ink-Logo-1.png">
+                    </div>
+                    <p>Bring dynamic and live Movable Ink experiences into your emails seamlessly.</p>
+                    <img src="https://stensul.com/wp-content/uploads/2021/06/home-int-arrow-icon.svg">
+                </div>
+                <div class="company" id="asana">
+                    <div class="company-logo">
+                        <img src="https://stensul.com/wp-content/uploads/2021/07/Asana.png">
+                    </div>
+                    <p>Update tasks in Asana projects to gather feedback and approval from your team on your email previews.</p>
+                    <img src="https://stensul.com/wp-content/uploads/2021/06/home-int-arrow-icon.svg">
+                </div>
+            </div>
+        </div>
+        <div id="resources">
+            <div id="resources-left">
+                <h4>Resources >></h4> <!-- Replace right arrows with arrows and animation from the Stensul site. -->
+                <h3>Learn more to create better</h3>
+                <p class="resources-p">Ideas to make you a better email and landing pages creator.</p>
+                <p class="resources-p" id="resources-p-bold">Thought starters.</p>
+            </div>
+            <div id="integrations-carousel">
+                <div class="company" id="brandfolder">
+                    <div class="company-logo">
+                        <img src="https://stensul.com/wp-content/uploads/2021/06/int-brandfolder.png">
+                    </div>
+                    <p>Enable controlled access to the appropriate Brandfolder library DAM based on your brand or mailstream.</p>
+                    <img src="https://stensul.com/wp-content/uploads/2021/06/home-int-arrow-icon.svg">
+                </div>
+                <div class="company" id="eloqua">
+                    <div class="company-logo">
+                        <img src="https://stensul.com/wp-content/uploads/2021/07/5ebb189148a62353a7f5bd48_eloqua-logo.png">
+                    </div>
+                    <p>Easily and securely push HTML to Eloqua folders and groups with integrated headers and footers.</p>
+                    <img src="https://stensul.com/wp-content/uploads/2021/06/home-int-arrow-icon.svg">
+                </div>
+                <div class="company" id="marketo">
+                    <div class="company-logo">
+                        <img src="https://stensul.com/wp-content/uploads/2021/06/int-marketo.png">
+                    </div>
+                    <p>Easily push HTML emails to Marketo Marketing Activities or Design Studio directly from Stensul via API.</p>
+                    <img src="https://stensul.com/wp-content/uploads/2021/06/home-int-arrow-icon.svg">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

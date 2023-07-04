@@ -9,6 +9,13 @@ html {
     width: 100%;
 }
 
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
 header {
     position: fixed;
     background-color: white;
@@ -94,7 +101,7 @@ header {
     background-color: #5F599B;
 }
 
-.header-demo-request {
+#header-demo-request {
     color: #C91715;
     border: 3px solid #C91715;
     border-radius: 10px;
@@ -102,25 +109,67 @@ header {
     
 }
 
-.header-demo-request:hover {
+#header-demo-request:hover {
     background-color: #C91715;
 }
 
-.header-demo-request li {
+#header-demo-request li {
     color: #C91715;
 }
 
-.header-demo-request li:hover {
+#header-demo-request li:hover {
     color: white;
 }
 
-.header-demo-request:active {
+#header-demo-request:active {
     border: 3px solid white;
+}
+
+.hamburger-icon {
+    display: none;
 }
 
 /* #header-demo-request-button {
     margin: 10px;
 } */
+
+@media only screen and (max-width: 1320px) {
+
+    
+    
+    .nav-bar li {
+        padding: 10px 16px;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+
+    .header-bar img {
+        height: 30px;
+    }
+    
+    .nav-bar li {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    
+    .announcement-bar p {
+        font-size: 1rem;
+        margin: 10px 30px;
+    }
+    
+    .nav-bar .nav-link, .nav-bar #header-demo-request {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display:contents;
+    }
+}
+
+/* Main */
 
 main {
     position: relative;
@@ -129,6 +178,15 @@ main {
     width: 100%;
     background-color: #E9E9ED;
 }
+
+@media only screen and (max-width: 990px) {
+
+    main {
+        top: 177px;
+    }
+}
+
+/* Hero */
 
 #tabs {
     display: flex;
@@ -175,14 +233,14 @@ main {
 #hero-left h1 {
     font-size: 2.7rem;
     padding: 10px 0px;
-    flex-basis: 200px;
+    /* flex-basis: 200px; */
     flex-shrink: 1.5;
 }
 
 #hero-left p {
     font-size: 1.2rem;
     padding: 5px 0px;
-    flex-basis: 70px;
+    /* flex-basis: 70px; */
     flex-shrink: 1;
 }
 
@@ -240,21 +298,47 @@ main {
 
 #chaos {
     height: 350px;
-    
+    width: auto;
     
 }
 
 
+@media only screen and (max-width: 960px) {
+
+    #hero-left h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero-left p {
+        font-size: 1rem;
+    }
+
+    #hero-demo-review {
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    #chaos {
+        height: 280px;
+        width: auto;
+    }
+}
+
+/* Logo Carousel */
 
 #logo-carousel {
     display: flex;
     justify-content: space-between;
     background-color: white;
+    width: 100%;
     padding: 30px 0px;
 }
 
 #logo-carousel img {
-    height: 30px;
+    /* height: 30px; */
+    width: 10%;
+    height: auto;
 }
 
 
@@ -411,6 +495,8 @@ main {
 }
 
 
+/* Footer */
+
 footer {
     color: white;
     background-color: #201E34;
@@ -478,4 +564,36 @@ footer {
     height: 110px;
     width: 110px;
     margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    #footer-logo {
+        height: 20px;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    #footer-g2 {
+        height: 50px;
+    }
+
+    #footer-deloitte {
+        height: 80px;
+    }
+
+    #footer-aicpa {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+
+    #address p {
+        font-size: 0.6rem;
+    }
 }
